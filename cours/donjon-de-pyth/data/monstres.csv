@@ -1,0 +1,17 @@
+nom;pv;attaque;defense;or;xp;niveau_min
+Rat géant;8;3;0;2;5;1
+Chauve-souris;6;4;0;1;4;1
+Gobelin;12;5;1;5;8;1
+Slime vert;15;3;2;3;6;1
+Squelette;18;6;2;6;12;2
+Loup affamé;16;7;1;4;11;2
+Araignée géante;20;7;2;7;14;2
+Orc;28;8;3;10;20;3
+Zombie;30;6;4;8;18;3
+Spectre;20;11;5;22;40;3
+Bandit;24;9;2;15;22;3
+Troll des cavernes;40;10;5;18;32;4
+Golem de pierre;45;8;8;20;35;4
+Sorcier noir;32;13;3;25;38;5
+Chevalier maudit;50;12;7;30;45;5
+Dragon de Pyth;70;12;4;100;150;6

@@ -1,0 +1,22 @@
+nom;type;bonus;prix;description
+Pomme;soin;5;2;Croquante, rend 5 PV
+Pain rassis;soin;8;3;Mieux que rien
+Potion;soin;20;10;Rend 20 PV
+Amulette de vie;soin;30;35;Rend 30 PV
+Grande potion;soin;50;25;Rend 50 PV
+Potion mystère;soin;;15;Personne ne sait
+Elixir;soin;100;60;Rend 100 PV
+Baton de marche;arme;1;5;Un simple baton
+Dague rouillée;arme;2;12;Elle a connu des jours meilleurs
+épée courte;arme;4;30;Légère et maniable
+Arc de chasse;arme;5;45;Pour frapper de loin
+Hache de guerre;arme;7;70;Lourde mais efficace
+Masse d'armes;arme;8;90;Ecrase les armures
+épée longue;arme;9;110;L'arme des chevaliers
+Lame de Pyth;arme;14;250;Forgée dans le feu du dragon
+Tunique en cuir;armure;1;10;Protège un peu
+Bouclier en bois;armure;2;20;Arrête les flèches
+Cotte de mailles;armure;3;40;Solide et souple
+Cape d'ombre;armure;4;70;On vous voit moins
+Armure d'écailles;armure;5;90;Faite d'écailles de dragon
+Armure de plates;armure;8;180;Lourde, mais rien ne passe

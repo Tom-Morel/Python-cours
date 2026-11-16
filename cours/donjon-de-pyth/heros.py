@@ -1,0 +1,15 @@
+heros = {
+    "nom" : "Ada",
+    "classe" : "Guerrier",
+    "pv" : 40,
+    "pv_max" : 40,
+    "attaque" : 6,
+    "defense" : 3,
+    "or" : 20,
+    "xp" : 0,
+    "niveau" : 1,
+    "inventaire" : {"Potion" : 2},
+    "arme" : None,
+    "armure" : None,
+    "salle" : 1,
+    }
