@@ -4,6 +4,7 @@ import random
 from heros import creer_heros, fiche
 from donnees import charger_monstres
 from combat import creer_monstre, combat
+from affiche import barre_vie
 
 # Dossier du jeu, quel que soit le dossier du terminal
 DOSSIER = Path(__file__).parent
@@ -39,6 +40,10 @@ def main():
     while (heros["pv"] > 0 and not fuite and monstre["pv"] > 0):
         tour += 1
         print(f"tour n°{tour}")
+        affiche_vie_heros = barre_vie(heros["pv"], heros["pv_max"])
+        affiche_vie_monstre = barre_vie(monstre["pv"], monstre["pv_max"])
+        print(f"{affiche_vie_heros}")
+        print(f"{affiche_vie_monstre}")
         print("1. Attaquer 2.Fuire")
         entrerutilisateur = input()
         if entrerutilisateur == "1":

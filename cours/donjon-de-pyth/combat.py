@@ -1,14 +1,14 @@
 import random
 from random import randint
-from donnees import *
-from heros import *
+from heros import attaque_totale
 
 def creer_monstre(modele) -> dict:
-    rng = 15#randint(0, len(modele))
+    rng = randint(0, len(modele))
     print(rng)
     return {
         "nom" : modele[rng]["nom"],
         "pv" : modele[rng]["pv"],
+        "pv_max" : modele[rng]["pv"],
         "attaque" : modele[rng]["attaque"],
         "defense" : modele[rng]["defense"],
         "or" : modele[rng]["or"],
