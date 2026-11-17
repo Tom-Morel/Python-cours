@@ -1,10 +1,17 @@
 import csv
 
+def convertir(valeur):
+    try:
+        return int(valeur)
+    except ValueError:
+        return valeur
+
 def charger_monstres(chemin) -> list[dict]:
     monstres = []
     with open(chemin, "r", encoding="cp1252", newline="") as f:
         for ligne in csv.DictReader(f, delimiter=";"):
-            monstres.append(ligne)
+            monstre = {cle: convertir(valeur) for cle, valeur in ligne.items()}
+            monstres.append(monstre)
     return monstres
 
 def charger_objets(chemin) -> list[dict]:
@@ -19,3 +26,4 @@ def index_par_nom(objets) -> dict:
     for objet in objets:
         index[objet["nom"]] = objet
     return index
+
