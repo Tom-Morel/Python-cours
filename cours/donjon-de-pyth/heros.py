@@ -1,7 +1,7 @@
 heros = {
     "nom" : "Ada",
     "classe" : "Guerrier",
-    "pv" : 40,
+    "pv" : 20,
     "pv_max" : 40,
     "attaque" : 6,
     "defense" : 3,

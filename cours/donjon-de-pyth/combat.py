@@ -3,8 +3,7 @@ from random import randint
 from heros import attaque_totale
 
 def creer_monstre(modele) -> dict:
-    rng = randint(0, len(modele))
-    print(rng)
+    rng = 15#randint(0, len(modele))
     return {
         "nom" : modele[rng]["nom"],
         "pv" : modele[rng]["pv"],
@@ -28,6 +27,7 @@ def combat(heros, monstre) -> int:
    if (monstre["pv"] > 0):
        degatsparmonstre = calculer_degats(monstre["attaque"], heros["defense"])
        heros["pv"] -= degatsparmonstre
+       print(f"{monstre["nom"]} a fait {degatsparmonstre} degats")
        if (heros["pv"] == 0):
            return 2
 
@@ -35,6 +35,7 @@ def combat(heros, monstre) -> int:
         monstre["pv"] = 0
         heros["or"] += monstre["or"]
         heros["xp"] += monstre["xp"]
+        print(f"{heros["nom"]} a gagné {monstre["or"]} d'or et {monstre["xp"]} d'xp")
         return 1
 
 

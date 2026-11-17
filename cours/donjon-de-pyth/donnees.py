@@ -18,7 +18,8 @@ def charger_objets(chemin) -> list[dict]:
     objets = []
     with open(chemin, "r", encoding="cp1252", newline="") as f:
         for ligne in csv.DictReader(f, delimiter=";"):
-            objets.append(ligne)
+            objet = {cle: convertir(valeur) for cle, valeur in ligne.items()}
+            objets.append(objet)
     return objets
 
 def index_par_nom(objets) -> dict:

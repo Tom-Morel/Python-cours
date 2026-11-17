@@ -2,9 +2,10 @@
 from pathlib import Path
 import random
 from heros import creer_heros, fiche
-from donnees import charger_monstres
+from donnees import charger_monstres, charger_objets, index_par_nom
 from combat import creer_monstre, combat
 from affiche import barre_vie
+from inventaire import ajouter_objet, utiliser_objet
 
 # Dossier du jeu, quel que soit le dossier du terminal
 DOSSIER = Path(__file__).parent
@@ -34,6 +35,21 @@ def main():
     monstre = creer_monstre(charger_monstres(DATA / "monstres.csv"))
     print(monstre)
     print("~~~~~~~~~~~~~~~~~~~")
+
+    toutobjets = charger_objets(DATA / "objets.csv")
+    objet = index_par_nom(toutobjets)
+    nom = "Baton de marche"
+
+    ajouter_objet(heros, objet, nom, 2)
+    print(heros["inventaire"])
+    utiliser_objet(heros, objet, nom)
+    print(heros["inventaire"])
+    utiliser_objet(heros, objet, nom)
+    print(heros["inventaire"])
+    print(heros["pv"])
+    print(heros["arme"])
+
+
 
     fuite = False
     tour = 0
